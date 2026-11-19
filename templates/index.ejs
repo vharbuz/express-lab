@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Архітектура міста Львова</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="mb-4">Архітектура міста Львова</h1>
+    <ul class="list-group">
+      <% for (let i = 0; i < types.length; i++) { %>
+        <li class="list-group-item">
+          <%= types[i].typeName %>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</body>
+</html>

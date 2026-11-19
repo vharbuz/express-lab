@@ -1,0 +1,17 @@
+<%- include('sub/head.ejs') %>
+<body>
+  <div class="container mt-4">
+    <%- include('sub/listHeader.ejs') %>
+    <div class="p-3 mb-4 bg-light text-center">
+      <h1><%= type.typeName %></h1>
+    </div>
+    <ul class="list-group">
+      <% for (let i = 0; i < objects.length; i++) { %>
+        <li class="list-group-item">
+          <a href="/obj/<%= objects[i].id %>/"><%= objects[i].objName %></a>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</body>
+</html>
